@@ -18,7 +18,7 @@ from torch.utils.tensorboard import SummaryWriter
 from pathlib import Path
 
 from dataset import BilingualDataset, causal_mask
-from main import Transformer
+from model import Transformer
 
 
 def greedy_decode(model, source, source_mask, tokenizer_src, tokenizer_tgt, max_len, device):
